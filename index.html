@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+    <title>Final project batch 02</title>
+    
+    <style>
+        
+        label{
+          position: absolute;
+          width: 45px;
+          height: 22px;
+          right: 20px;
+          top: 20px;
+          border: 2px solid;
+          border-radius: 20px;
+          margin-top: 20px;
+      }
+      label:before{
+          position: absolute;
+          content: '';
+          width:20px;
+          height: 20px;
+          left: 1px;
+          top: 1px;
+          border-radius: 50%;
+          background: #000;
+          cursor: pointer;
+          transition: 0.4s;
+      }
+      label.active:before{
+          left: 24px;
+          background: #fff;
+      }
+      body.night{
+          background: rgb(54, 43, 43);
+          color: #fff;
+      }
+  </style>
+
+</head>
+<body>
+
+    <header>
+        <label id="dark-change"></label>
+    </header>
+    <script>
+           var content = document.getElementsByTagName('body')[0];
+           var content = document.getElementsByTagName('contact-wrapper');
+           var z = document.getElementsByClassName("greeting");
+           var darkMode = document.getElementById('dark-change');
+           darkMode.addEventListener('click', function(){
+               darkMode.classList.toggle('active');
+               content.classList.toggle('night');
+               x[0].classList.toggle("contact-wrapper-dark");
+        z[0].classList.toggle("greeting-dark");
+      });
+
+    </script>
+    
+ <div class="container">
+     <nav class="menu">
+         <div class="logo">
+             <h1>Project Alpha</h1>
+         </div>
+         <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+         <div class="menu-list">
+             <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><a href="#">Gallery</a></li>
+                 <li><a href="#">Achievment</a></li>
+             </ul>
+         </div>
+        </nav>
+
+     <div class="main">
+         <div class="greeting"> 
+            <div class="ugreeting">
+           <div>
+             <h2>
+                 Hi there, My name is Amri and I am a future web developer.
+             </h2>
+             <P>As a young man who does really courious on things and knowledge that existed in the whole world
+                and believe that we need to catch up with technology development in order to compete, 
+                learning how to be a web developer is the very first step that need to take.</P>
+            </div>
+            <div>    
+            <img src="image/me.png" class="self">
+            </div>
+            </div>
+         <img><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.79" d="M0,192L0,320L80,320L80,64L160,64L160,256L240,256L240,224L320,224L320,64L400,64L400,192L480,192L480,256L560,256L560,192L640,192L640,160L720,160L720,192L800,192L800,32L880,32L880,96L960,96L960,160L1040,160L1040,288L1120,288L1120,64L1200,64L1200,32L1280,32L1280,224L1360,224L1360,128L1440,128L1440,0L1360,0L1360,0L1280,0L1280,0L1200,0L1200,0L1120,0L1120,0L1040,0L1040,0L960,0L960,0L880,0L880,0L800,0L800,0L720,0L720,0L640,0L640,0L560,0L560,0L480,0L480,0L400,0L400,0L320,0L320,0L240,0L240,0L160,0L160,0L80,0L80,0L0,0L0,0Z"></path></svg>
+        </div>
+         <div class="education"> 
+            <div class="edb"> 
+            <h4 class="edb1">Education Background</h4>
+             <p>I graduated as a cumlaude from University Muhammadiyah Yogyakarta, studied International relation for 3,5 years.
+                Before study in University I was learning Multimedia in SMKN 3 Mataram, I learn the very basic of programming there.
+                Study is something that we have to do all over our live without acknowleding the ages. 
+            </p> 
+        </div> 
+            <div class="eduimage"><img src="image/img-20210306-103614-6042f9628ede48787a6baba2.jpg" class="eduimage1"></div>
+            </div>
+         <div class="work">
+             <div class="work1">
+                 <img src="image/B49xTPwCQAEWhDS.jpg" class="workimg">
+             </div>
+            <div class="work2">
+                <h4 class="we">Working Experience</h4> 
+            <p>I have such a various experience in working environment,
+                after graduated from University, I accordingly working 2 years in hospitality industry in Lombok Island.
+                Have enough experience in hospitality industry, I try my luck as entrepreneurship by opening a small shop.
+                Not all things happening by what we expected then I work as an administrator after a year as an entrepreneurship.
+                My last working experience is a welder in Amman Mineral environment. 
+                Those are my working experience and I look forward to be a programmer in the nearest future</p>
+            </div>
+            </div>
+     </div>
+     <div>
+     <img><svg class="svgbg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.79" d="M0,96L0,96L90,96L90,288L180,288L180,256L270,256L270,224L360,224L360,160L450,160L450,96L540,96L540,288L630,288L630,192L720,192L720,96L810,96L810,256L900,256L900,160L990,160L990,192L1080,192L1080,0L1170,0L1170,288L1260,288L1260,256L1350,256L1350,96L1440,96L1440,320L1350,320L1350,320L1260,320L1260,320L1170,320L1170,320L1080,320L1080,320L990,320L990,320L900,320L900,320L810,320L810,320L720,320L720,320L630,320L630,320L540,320L540,320L450,320L450,320L360,320L360,320L270,320L270,320L180,320L180,320L90,320L90,320L0,320L0,320Z"></path></svg>
+    </div>
+
+     <div class="contact-wrapper">
+        <h5 class="contact-title">Connect with me</h5>
+        <p class="email">E-mail Required</p>
+        <input>
+        <p>Message (Required)</p>
+        <textarea></textarea>
+        <p>* Required fields must be filled</p>
+        <a class="btn signup" href="#">Send</a>
+     </div>
+     <footer>
+        <div class="menu-footer">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Achievment</a></li>
+            </ul>
+        </div> 
+        <div class="copy-right">
+            <img src="image/copyright-symbol-square.png">
+        </div>
+     </footer>
+ </div>
+ <script>
+     
+     const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('slide');
+
+      });
+
+ </script>   
+</body>
+</html>
