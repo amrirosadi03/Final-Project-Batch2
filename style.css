@@ -289,11 +289,6 @@
       text-align: center;
       padding-left: 20px;
     }
-     .svg {
-      width: 105vh;
-      
-       
-    }
     
     .education {
       display: flex;
@@ -391,11 +386,6 @@
       /* padding-left: 120px; */
     }
 
-    .svg {
-      width: 64vh;
-      left: 0%;
-      
-    }
     .education p {
       padding-bottom: 10px;
       width: fit-content;
